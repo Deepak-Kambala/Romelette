@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./fav.svg" type="image/x-icon">
-  <title>Why I Love You 💕</title>
+  <title>为什么爱你 💕</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap"
     rel="stylesheet">
@@ -223,6 +223,36 @@
     color: #fff;
     }
 
+    .nav-links {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      display: flex;
+      gap: 15px;
+      z-index: 100;
+    }
+
+    .nav-link {
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      backdrop-filter: blur(5px);
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      color: rgba(0, 0, 0, 0.7);
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgb(0, 0, 0);
+    }
+
+    .nav-link:hover {
+      background: linear-gradient(90deg, var(--accent1, #ff7a7a), var(--accent2, #ff2e63));
+      color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(255, 46, 99, 0.3);
+    }
+
     .floating-hearts {
       position: fixed;
       top: 0;
@@ -280,84 +310,91 @@
         padding: 10px 20px;
         font-size: 0.9rem;
       }
+
+      .nav-links {
+        top: 80px;
+        right: 20px;
+        flex-direction: column;
+      }
+
+      .nav-link {
+        padding: 10px 18px;
+        font-size: 0.85rem;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <a href="page2.htm" class="back-button">← Back</a>
+  <a href="page2.htm" class="back-button">← 返回</a>
+
+  <div class="nav-links">
+    <a href="memories.htm" class="nav-link">📸 我们的回忆</a>
+    <a href="index.htm" class="nav-link">🏠 首页</a>
+  </div>
 
   <div class="floating-hearts" id="floatingHearts"></div>
 
   <div class="container">
     <div class="header">
-      <h1>Reasons Why I Love You</h1>
-      <p class="subtitle">Every moment with you is a treasure 💖</p>
+      <h1>爱你的理由</h1>
+      <p class="subtitle">与你在一起的每一刻都是珍宝 💖</p>
     </div>
 
     <div class="reasons-grid">
       <div class="reason-card">
         <span class="reason-icon">😊</span>
-        <h3 class="reason-title">Your Smile</h3>
-        <p class="reason-text">Your smile lights up my darkest days and fills my heart with joy. It's the most beautiful
-          thing I've ever seen.</p>
+        <h3 class="reason-title">你的微笑</h3>
+        <p class="reason-text">你的笑容如春日暖阳，驱散我心中的阴霾。那一抹浅笑，胜过人间万千繁华，是我此生见过最动人的风景。</p>
       </div>
 
       <div class="reason-card">
         <span class="reason-icon">💫</span>
-        <h3 class="reason-title">Your Kindness</h3>
-        <p class="reason-text">The way you care for others and show compassion makes my heart melt. Your kindness makes
-          the world a better place.</p>
+        <h3 class="reason-title">你的善良</h3>
+        <p class="reason-text">你心怀慈悲，待人以温柔。你的善意如涓涓细流，润物无声，让这世间多了一份温暖，也让我的心甘愿为你沦陷。</p>
       </div>
 
       <div class="reason-card">
         <span class="reason-icon">🌟</span>
-        <h3 class="reason-title">Your Uniqueness</h3>
-        <p class="reason-text">Everything about you is special. Your quirks, your passions, your dreams - they all make
-          you perfectly you.</p>
+        <h3 class="reason-title">你的独特</h3>
+        <p class="reason-text">世间千万人，唯你独一无二。你的每一个小习惯，每一份执着，都是上天赐予我的珍宝，让我深深着迷。</p>
       </div>
 
       <div class="reason-card">
         <span class="reason-icon">🎵</span>
-        <h3 class="reason-title">Your Laugh</h3>
-        <p class="reason-text">Your laughter is music to my ears. It's contagious, genuine, and fills every room with
-          happiness and warmth.</p>
+        <h3 class="reason-title">你的笑声</h3>
+        <p class="reason-text">你的笑声如天籁之音，清脆悦耳，余音绕梁。每一次听到，都让我的心跟着雀跃，仿佛整个世界都明媚起来。</p>
       </div>
 
       <div class="reason-card">
         <span class="reason-icon">💪</span>
-        <h3 class="reason-title">Your Strength</h3>
-        <p class="reason-text">The way you face challenges with courage and determination inspires me every single day.
-          You're my hero.</p>
+        <h3 class="reason-title">你的坚强</h3>
+        <p class="reason-text">你如劲松傲立风雪，如磐石屹立不倒。你的坚韧与勇敢，是我前行路上最大的力量，也是我心中永远的英雄。</p>
       </div>
 
       <div class="reason-card">
         <span class="reason-icon">🌈</span>
-        <h3 class="reason-title">Your Presence</h3>
-        <p class="reason-text">Just being near you makes everything better. Your presence brings peace, comfort, and
-          endless happiness to my life.</p>
+        <h3 class="reason-title">你的存在</h3>
+        <p class="reason-text">有你在的地方，便是我的桃花源。你的陪伴让岁月静好，让人间值得，让我的生命有了最美的意义。</p>
       </div>
 
       <div class="reason-card">
         <span class="reason-icon">💝</span>
-        <h3 class="reason-title">Your Heart</h3>
-        <p class="reason-text">The love and warmth you give so freely is a gift I cherish. Your beautiful heart makes me
-          fall in love more every day.</p>
+        <h3 class="reason-title">你的心</h3>
+        <p class="reason-text">你有一颗赤诚之心，纯净如水晶，温暖如骄阳。你给予的爱无私而深沉，让我每一天都更加珍惜这份缘分。</p>
       </div>
 
       <div class="reason-card">
         <span class="reason-icon">🌸</span>
-        <h3 class="reason-title">Your Beauty</h3>
-        <p class="reason-text">Inside and out, you're absolutely breathtaking. Your beauty radiates from your soul and
-          lights up everything around you.</p>
+        <h3 class="reason-title">你的美丽</h3>
+        <p class="reason-text">你的美由内而外，如芙蓉出水，清丽脱俗。你的灵魂散发着光芒，照亮了我的世界，也温柔了我的岁月。</p>
       </div>
 
       <div class="reason-card">
         <span class="reason-icon">∞</span>
-        <h3 class="reason-title">Everything About You</h3>
-        <p class="reason-text">There are infinite reasons why I love you. You're my everything, my forever, and my
-          greatest blessing.</p>
+        <h3 class="reason-title">你的一切</h3>
+        <p class="reason-text">爱你的理由千千万万，道不尽说不完。你是我的星辰大海，是我的诗与远方，是我今生最美的遇见，也是我永恒的归宿。</p>
       </div>
     </div>
   </div>
@@ -367,10 +404,19 @@
     const params = new URLSearchParams(window.location.search);
     const name = params.get("name");
 
-    // Update back button to include name
+    // Update back button and nav links to include name
     const backButton = document.querySelector('.back-button');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
     if (name) {
       backButton.href = `page2.htm?name=${encodeURIComponent(name)}`;
+      navLinks.forEach(link => {
+        if (!link.href.includes('index.htm')) {
+          const url = new URL(link.href, window.location.href);
+          url.searchParams.set('name', name);
+          link.href = url.toString();
+        }
+      });
     }
 
     // Create floating hearts
