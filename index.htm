@@ -174,16 +174,17 @@
     /* Floating hearts */
     .floating-heart {
       position: absolute;
+      bottom: -50px;
       font-size: 2rem;
       animation: float 8s infinite ease-in-out;
       opacity: 0.7;
       pointer-events: none;
+      z-index: 1;
     }
 
     @keyframes float {
 
-      0%,
-      100% {
+      0% {
         transform: translateY(0) rotate(0deg);
         opacity: 0;
       }
@@ -197,7 +198,7 @@
       }
 
       100% {
-        transform: translateY(-100vh) rotate(360deg);
+        transform: translateY(-115vh) rotate(360deg);
         opacity: 0;
       }
     }
@@ -205,12 +206,15 @@
     /* Rose petals */
     .petal {
       position: absolute;
+      top: -20px;
       width: 15px;
       height: 15px;
       background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
       border-radius: 50% 0 50% 50%;
       opacity: 0.6;
       animation: petalFall 10s infinite ease-in;
+      pointer-events: none;
+      z-index: 1;
     }
 
     @keyframes petalFall {
